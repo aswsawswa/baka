@@ -5,8 +5,8 @@ p {
     font-family: sans-serif;
     text-align: center;
     vertical-align: middle;
+    /**/
   }
-
 
 .inner-div {
     height: 200px;
@@ -15,14 +15,26 @@ p {
     background-color: #096eeb;
   }
 
+  /* — "Уэээээээаа!.." — СБЭУ кАмар*/
+.special-div {
+  height: 325px;
+  width: 545px;
+  /* margin: 10px; */
+  background-color: #096eeb;
+}
+
+/* Для ДИВа, который сверху */
+#special-div {
+  margin-left: 15px;
+  margin-top: 205px; /* Для регулировки высоты, а не Heigth */
+}
+
 .inner-line {
     height: 200px;
     width: 1250px;
     margin: 10px;
     background-color: #096eeb;
-
   }
-
 
 .container {
     display: flex;
@@ -32,15 +44,29 @@ p {
     /*flex-direction: column-reverse; */
 }
 .line-container {
-  display: inline-flex;
+  /* display: inline-flex; */
+  display: flex;
   flex-direction: row;
   /*flex-direction: row-reverse; */
   /*flex-direction: column; */
   /*flex-direction: column-reverse; */
   /* flex-grow:1; */
   flex-wrap: wrap;
+  width: 1800px;
+  flex:none
 }
 
+.double-img-container {
+  /* display: inline-flex; */
+  display: flex;
+  flex-direction: column;
+  /*flex-direction: row-reverse; */
+  /*flex-direction: column; */
+  /*flex-direction: column-reverse; */
+  /* flex-grow:1; */
+  flex-wrap: wrap;
+  flex:none
+}
 
 .over-container {
   display: flex;
@@ -48,9 +74,126 @@ p {
   /*flex-direction: row-reverse; */
   /*flex-direction: column; */
   /*flex-direction: column-reverse; */
+  flex: none;
+
+  /*border: solid 2px black; /**/
+  width: 1450px;
 }
 
-body{
-background-color:#87CEEB;
+body {
+  background-color:#87CEEB;
+}
 
+.balka {
+  display: flex;
+  flex-direction: column;
+  /* background-color:gray; */
+  flex: none; /**/
+
+  /* border: black solid 2px; /**/
+  width: 1250px; /* 100%; /**/
+}
+
+.sky
+{
+  display: none; /* ON — block ; OFF — none */
+
+  margin: 0;
+  padding: 0;
+
+  border: solid black 2px;
+
+  width: auto;
+  height: 500px;
+
+  background-color: #5fa7ff;
+}
+
+/* BLOCK's :: MINECRAFT :: TERRARIA */
+.LEP
+{
+  z-index: 2;
+
+  /* relative — независимое местоположение; absolute — отталкивается от объектов-соседей */
+  /* СВЕРХУ ЛОЖЬб */
+  position: relative; 
+
+  width: 1250px;
+
+  top: 180px;
+  bottom: 0px;
+  left: 50px;
+
+  transform: rotate(-2deg);
+}
+
+.block-top-left
+{
+  z-index: 1;
+
+  margin-top: 0px;
+  margin-bottom: -531px; /* ДА ПОЧЕМУ Я ДОЛЖЕН ВЫЛОЖИТЬ НЕСКОЛЬКО СОТОК, ЧТОБЫ СДВИНУТЬ ЭТО ВНИЗ НА 25-50 ПИКСЕЛЕЙ?!! */
+  padding-top: 0px;
+  padding-left: 25px;
+
+  width: 400px;
+}
+
+.block-top-right
+{
+  margin-left: -27px;
+  /* margin-bottom: -5000000px; */
+
+  width: 245px;
+}
+
+.boxs
+{
+  margin-top: 50px;
+  margin-bottom: -5px; /* 39px */
+  margin-left: 20px;
+
+  width: 150px;
+}
+
+.block-bot-left
+{
+  padding-left: 25px;
+
+  width: 400px;
+}
+
+.block-bot-right
+{
+  width: 161px;
+}
+
+footer
+{
+  margin-top: -10px;
+}
+/* ==== ==== ==== ==== */
+
+.img-div-left-top {
+  position: relative;
+}
+
+.underimage {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.overlay {
+  position: absolute;
+  height: 180px;
+  width: 200px;
+  background-color: #096eeb;
+  bottom: 250px;
+  left: 150px;
+}
+
+.buttons_goroup_left_top {
+  height: 100px;
+  width: 100px;
+  background-color: #096eeb;
 }
