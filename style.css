@@ -81,7 +81,7 @@ p {
 }
 
 body {
-  background-color:#87CEEB;
+  background-color: #5fa7ff;
 }
 
 .balka {
@@ -96,17 +96,26 @@ body {
 
 .sky
 {
-  display: none; /* ON — block ; OFF — none */
+  display: block; /* ON — block ; OFF — none */
 
   margin: 0;
   padding: 0;
 
-  border: solid black 2px;
+  /* border: solid black 2px; */
 
   width: auto;
   height: 500px;
 
   background-color: #5fa7ff;
+}
+
+.clouds
+{
+  margin-top: 300px;
+  margin-left: 450px;
+  padding: 0;
+
+
 }
 
 /* BLOCK's :: MINECRAFT :: TERRARIA */
