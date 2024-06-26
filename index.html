@@ -11,7 +11,6 @@
         </header>
         <main>
             <div class = "sky">
-            
                 <image  class="clouds" src="clouds.png" width="700px" height = 300px/>
             </div>
             <image class="LEP" src="ЛЭП.svg"/>
@@ -20,8 +19,6 @@
                 <div class="line-container">
                     <div class="inner-line-dog">
                         <!-- Облака-а... белоснежные лошадки!.. -->
-                        
-                        
                     </div>
                 </div>
                 <div class="container">
@@ -32,7 +29,19 @@
                         </div-->
                     </div>
                     <div class="special-div" id="special-div">
-                        <p>2</p>
+                        <!--p class="p">2</p-->
+                        <form action="PYTHON_FILE_NAME.py" method="get" name="form_top">
+                            <input type="text" class="textBox" name="txt_qPhases" placeholder="Количество фаз"/>
+                            <input type="button" class="button_css" name="del_qPhases" value="Удалить"/>
+                            <br>
+                            <input type="text" class="textBox" name="txt_voltage" placeholder="Начальное напряжение (нагрузка)"/>
+                            <input type="button" class="button_css" name="del_voltage" value="Удалить"/>
+                            <br>
+                            <p class="p2">
+                                <input type="button"  class="button_css" name="add_record" value="Добавить запись"/>
+                                <input type="submit" class="button_css" name="calculate" value="Расчитать"/>
+                            </p>
+                        </form>
                     </div>
                     <div class="double-img-container">
                         <!-- class="balka" -->
@@ -53,7 +62,7 @@
                         <image  class="block-bot-left" src="Отдельный блок с кирпичами.svg" style="margin-right: 15px;"/>
                     </div>
                     <div class="special-div">
-                        <p>2</p>
+                        <p class="p">2</p>
                     </div>
                     <div class="img-div-right-lower">
                         <!-- class="balka"  -->
@@ -63,7 +72,7 @@
             </div>
         </main>
         <footer>
-            <image src="Бетон (БЕТОНОМЕШАЛКА!!! МЕШАЕТ БЕТОН!!!).svg" ></image>
+            <image src="new_beton.png" ></image>
         </footer>
     </body>
 </html>

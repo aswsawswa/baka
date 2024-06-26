@@ -1,4 +1,4 @@
-p {
+.p {
     padding-top: 40px;
     margin: 0;
     font-size: 100px;
@@ -103,19 +103,30 @@ body {
 
   /* border: solid black 2px; */
 
+
+  /*
   width: auto;
   height: 500px;
+  /**/
 
   background-color: #5fa7ff;
 }
 
 .clouds
 {
-  margin-top: 300px;
+  position: relative;
+
+  margin-top: 0px; /* 300px */
   margin-left: 450px;
+  margin-bottom: 0px;
   padding: 0;
 
+  top: 200px;
+  left: 0px;
 
+  /* background-color: #F00; */
+  /* filter: invert(1);       /* Boolean :: Классная штука, сразу тучи делает, но промежуточного нет */
+  filter: brightness(100%); /* 0-100 %% :: Использовать до 50 процентов. Для создания туч только применить INVERT */
 }
 
 /* BLOCK's :: MINECRAFT :: TERRARIA */
@@ -180,6 +191,8 @@ body {
 footer
 {
   margin-top: -10px;
+
+  /* background-color: #7D7D7D; /**/
 }
 /* ==== ==== ==== ==== */
 
@@ -205,4 +218,21 @@ footer
   height: 100px;
   width: 100px;
   background-color: #096eeb;
+}
+
+.textBox
+{
+  margin: 15px 15px 0px;
+
+  width: 200px;
+}
+
+.button_css
+{
+  margin: 0px 10px 0px;
+}
+
+.p2
+{
+  margin: 25px;
 }
